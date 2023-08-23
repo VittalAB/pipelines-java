@@ -14,7 +14,7 @@ pipeline {
                     url : 'https://github.com/VittalAB/pipelines-java.git'
 
                 // Run Maven on a Unix agent.
-                sh "mvn mvn clean verify sonar:sonar   -Dsonar.projectKey=Jenkins-Pipeline   -Dsonar.host.url=http://20.163.247.4:9000  -Dsonar.login=sqp_b361b019b4022a41bc05c60862e49f24a5349986"
+                sh "mvn clean verify sonar:sonar   -Dsonar.projectKey=Jenkins-Pipeline   -Dsonar.host.url=http://20.163.247.4:9000  -Dsonar.login=sqp_b361b019b4022a41bc05c60862e49f24a5349986"
 
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
